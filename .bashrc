@@ -11,7 +11,7 @@ export RSENSE_HOME="/usr/local/Cellar/rsense/0.3/libexec"
 
 export PATH="/Users/robertdallasgray/.cask/bin:$PATH"
 
-source "Users/robertdallasgray/.aws"
+source "/Users/robertdallasgray/.aws"
 
 # Tell ls to be colourful
 export CLICOLOR=1
