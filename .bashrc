@@ -1,17 +1,16 @@
 export PATH="/usr/local/bin:/usr/local/mysql/bin:/usr/local/sbin:/Users/robertdallasgray/bin:$PATH"
 
-export EDITOR="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient"
-export ALTERNATE_EDITOR="/Applications/Emacs.app/Contents/MacOS/Emacs"
-alias emacs="$ALTERNATE_EDITOR"
+export EDITOR="/usr/local/bin/emacsclient"
+export ALTERNATE_EDITOR="/usr/local/bin/emacs"
 
-export PATH=/usr/local/pgsql-9.1/bin:$PATH
-export PGDATA=/usr/local/pgsql/data
+# export PATH=/usr/local/pgsql-9.1/bin:$PATH
+# export PGDATA=/usr/local/pgsql/data
 
 export RSENSE_HOME="/usr/local/Cellar/rsense/0.3/libexec"
 
 export PATH="/Users/robertdallasgray/.cask/bin:$PATH"
 
-source "/Users/robertdallasgray/.aws"
+# source "/Users/robertdallasgray/.aws"
 
 # Tell ls to be colourful
 export CLICOLOR=1
@@ -26,8 +25,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 [[ -s /Users/robertdallasgray/.nvm/nvm.sh ]] && . /Users/robertdallasgray/.nvm/nvm.sh # This loads NVM
-nvm use 0.8.7
+nvm use 0.10
 
 [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ] || return
 source /usr/local/share/chruby/chruby.sh
-chruby ruby
+chruby ruby-1.9
