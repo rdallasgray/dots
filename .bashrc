@@ -4,22 +4,15 @@ export PATH="/Applications/Emacs.app/Contents/MacOS:$PATH"
 export EDITOR="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient"
 export ALTERNATE_EDITOR="/Applications/Emacs.app/Contents/MacOS/Emacs"
 
-export PATH=/usr/local/pgsql-9.1/bin:$PATH
-export PGDATA=/usr/local/pgsql/data
-
 export RSENSE_HOME="/usr/local/Cellar/rsense/0.3/libexec"
 
 export PATH="/Users/robertdallasgray/.cask/bin:$PATH"
-
-source "/Users/robertdallasgray/.aws"
 
 # Tell ls to be colourful
 export CLICOLOR=1
 
 # Tell grep to highlight matches
 export GREP_OPTIONS='--color=auto'
-
-export COFFEELINT_CONFIG="/Users/robertdallasgray/coffeelint.json"
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
