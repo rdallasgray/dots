@@ -1,7 +1,10 @@
 export PATH="/usr/local/bin:/usr/local/mysql/bin:/usr/local/sbin:/Users/robertdallasgray/bin:$PATH"
+export PATH="/Applications/Emacs.app/Contents/MacOS:$PATH"
 
 export EDITOR="/usr/local/bin/emacsclient"
 export ALTERNATE_EDITOR="/usr/local/bin/emacs"
+
+export EMACS="/usr/local/bin/emacs"
 
 # export PATH=/usr/local/pgsql-9.1/bin:$PATH
 # export PGDATA=/usr/local/pgsql/data
@@ -9,8 +12,6 @@ export ALTERNATE_EDITOR="/usr/local/bin/emacs"
 export RSENSE_HOME="/usr/local/Cellar/rsense/0.3/libexec"
 
 export PATH="/Users/robertdallasgray/.cask/bin:$PATH"
-
-# source "/Users/robertdallasgray/.aws"
 
 # Tell ls to be colourful
 export CLICOLOR=1
@@ -29,4 +30,14 @@ nvm use 0.10
 
 [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ] || return
 source /usr/local/share/chruby/chruby.sh
-chruby ruby-1.9
+chruby ruby-2.1.0
+
+if [[ $INSIDE_EMACS ]]; then
+    bind 'set bell-style none'
+    bind 'set horizontal-scroll-mode on'
+    bind 'set completion-display-width 0'
+    bind 'set print-completions-horizontally on'
+    bind 'set page-completions off'
+fi
+
+source ~/.aws
