@@ -30,8 +30,12 @@ if [[ $INSIDE_EMACS ]]; then
     bind 'set bell-style none'
     bind 'set horizontal-scroll-mode on'
     bind 'set completion-display-width 0'
+    bind 'set completion-query-items 30'
     bind 'set print-completions-horizontally on'
     bind 'set page-completions off'
 fi
+
+# Prevent Berkshelf choking on UTF-8 characters
+export LC_CTYPE="UTF-8"
 
 source ~/.aws
