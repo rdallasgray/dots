@@ -1,7 +1,0 @@
---ignore-dir=node_modules
---type-set=coffeescript=.coffee
---type-set=json=.json
---nosql
-
---ignore-dir=log
---ignore-dir=tmp
