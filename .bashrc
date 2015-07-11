@@ -1,5 +1,6 @@
 export PATH="/usr/local/bin:/usr/local/mysql/bin:/usr/local/sbin:/Users/robertdallasgray/bin:$PATH"
 export PATH="/Applications/Emacs.app/Contents/MacOS:$PATH"
+export PATH="/Users/robertdallasgray/Documents/Code/git-wip:$PATH"
 
 export EDITOR="/usr/local/bin/emacsclient"
 export ALTERNATE_EDITOR="/usr/local/bin/emacs"
