@@ -21,11 +21,11 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 [[ -s /Users/robertdallasgray/.nvm/nvm.sh ]] && . /Users/robertdallasgray/.nvm/nvm.sh # This loads NVM
-nvm use 0.10
+nvm use v4
 
 [ -n "$BASH_VERSION" ] || [ -n "$ZSH_VERSION" ] || return
 source /usr/local/share/chruby/chruby.sh
-chruby ruby-2.1.0
+chruby ruby-2.1.3
 
 if [[ $INSIDE_EMACS ]]; then
     bind 'set bell-style none'
@@ -38,5 +38,3 @@ fi
 
 # Prevent Berkshelf choking on UTF-8 characters
 export LC_CTYPE="UTF-8"
-
-source ~/.aws
