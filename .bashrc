@@ -4,8 +4,7 @@ export EMACS="/usr/local/bin/emacs"
 
 export PATH="/Users/robertdallasgray/.cask/bin:$PATH"
 
-# Tell ls to be colourful
-export CLICOLOR=1
+source /usr/local/share/chruby/chruby.sh
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
