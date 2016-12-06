@@ -2,6 +2,7 @@ tap "caskroom/cask"
 tap "homebrew/completions"
 
 brew "cask"
+brew "chruby"
 brew "emacs", args: ["with-cocoa"]
 brew "git"
 brew "brew-cask-completion"
@@ -25,5 +26,4 @@ cask "chefdk"
 cask "google-chrome"
 cask "java"
 cask "dropbox"
-cask "freedome"
 cask "iterm2"
